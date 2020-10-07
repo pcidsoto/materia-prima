@@ -12,18 +12,23 @@
     <div class="card-body px-lg-5 pt-0">
   
       <!-- Form -->
-      <form class="text-center" style="color: #757575;" action="#!">
+      <form 
+      [formGroup]="loginForm"
+      (ngSubmit)="onLogin()"
+      class="text-center" 
+      style="color: #757575;" 
+      >
   
         <!-- Email -->
         <div class="md-form">
-          <input type="email" id="Email" class="form-control">
-          <label for="Email">E-mail</label>
+          <input type="email" class="form-control" formControlName="email" autocomplete="on">
+          <label for="email">E-mail</label>
         </div>
   
         <!-- Password -->
         <div class="md-form">
-          <input type="password" id="Password" class="form-control">
-          <label for="Password">Password</label>
+          <input type="password"  class="form-control" formControlName="password" autocomplete="on">
+          <label for="password">Password</label>
         </div>
 
   

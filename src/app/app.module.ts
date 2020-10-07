@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { NavbarComponent } from './shared/navbar/navbar.component';
+
+// modulo de fomularios reactivos
+import { ReactiveFormsModule } from '@angular/forms';
  
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
