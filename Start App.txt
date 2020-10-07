@@ -1,0 +1,50 @@
+Login Angular - FireBase
+
+crear proyecto angular
+	ng new <nombre proyecto> --routing
+
+Crear Proyecto en firebase
+	Nombre
+	google analitics *opcional
+	continuar
+
+Authentication
+	Sign-in method
+	Habilitar correo electronico/contraseña
+
+Obtener key
+	Configuración del proyecto
+	General
+	Tus Aplicaciones
+	Click -> App Web
+	Registrar la Aplicacion -> Apodo app
+	habilitar hosting
+	next -> ir consola.
+
+Firebase SDK snippet
+	configuración
+	copiar
+
+Agregar key de firebase al proyecto
+	pegar la configuracion en enviroment.ts 
+	modificar sintaxis
+	guardar
+	
+configurar dependencias:
+	instalar bootstrap
+	instalar jquery
+	instalar popper
+	npm i bootstrap jquery @popperjs/core
+	
+	**Opcional
+	instalar mdboostrap
+	npm i mdboostrap
+--------------------------------------
+	instalar mdbostrap para angular
+	https://mdbootstrap.com/docs/angular/getting-started/quick-start/
+	seguir instrucciones
+
+
+
+ 
+	
