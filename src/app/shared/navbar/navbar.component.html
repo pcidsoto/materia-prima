@@ -14,27 +14,35 @@
         </li>
         
       </ul>
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" *ngIf="user$ | async as user; else login">
         
-        <li class="nav-link active">
-            <a class="nav-link p-0" routerLink="/login">Login</a>
+        
+        <li class="nav-link active" *ngIf="user">
+            <a class="nav-link p-0" (click)="onLogout()" >Logout</a>
         </li>
-        <li class="nav-link active">
-            <a class="nav-link p-0">Logout</a>
+        
+        <!--Obtenemos el dato del usuario logueado-->
+        <li class="nav-item" *ngIf="user">
+          <a class="nav-link"> {{ user.email }} </a>
         </li>
-        <li class="nav-link active">
-            <a class="nav-link p-0" routerLink="/register">Register</a>
-        </li>
-        <li class="nav-item avatar">
+
+        <li class="nav-item avatar" *ngIf="user">
           <a class="nav-link p-0" href="#">
             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
               alt="avatar image" height="35">
           </a>
-          
         </li>
-        
-        
       </ul>
+      <ng-template #login>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-link active">
+            <a class="nav-link p-0"  routerLink="/login">Login</a>
+        </li>
+        <li class="nav-link active">
+          <a class="nav-link p-0"  routerLink="/register">Register</a>
+        </li>
+        </ul>
+      </ng-template>
     </div>
   </nav>
   <!--/.Navbar -->

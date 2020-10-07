@@ -13,7 +13,12 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 
 // modulo de fomularios reactivos
 import { ReactiveFormsModule } from '@angular/forms';
- 
+
+// import firebase angular
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig), // nos permitira trabajar con firebase
+    AngularFireAuthModule // nos permitira trabajar con las autenticaciones
   ],
   providers: [],
   bootstrap: [AppComponent]
