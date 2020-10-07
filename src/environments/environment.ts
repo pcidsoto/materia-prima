@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyAaJLN8YyLjGXiARdQzkqUZX3Zfw1h_9Ns",
+    authDomain: "materiaprima-d8031.firebaseapp.com",
+    databaseURL: "https://materiaprima-d8031.firebaseio.com",
+    projectId: "materiaprima-d8031",
+    storageBucket: "materiaprima-d8031.appspot.com",
+    messagingSenderId: "717579556348",
+    appId: "1:717579556348:web:20a0e3d35c7386208e0e79"
+  },
 };
 
 /*

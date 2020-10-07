@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "materiaprima-d8031": {
+      "hosting": {
+        "materiaprima": [
+          "materiaprima-d8031"
+        ]
+      }
+    }
+  }
+}
